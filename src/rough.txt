@@ -1,0 +1,31 @@
+1. this whole is for the better practice of speech recognization we only have to copy it paste by the copy old code of speech recognization
+and also in app.jsx onclick={startRecognization},in context.jsx value={startRecognization} then we can use it
+*** function startRecognition() {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {     // this is for if
+      console.log("❌ SpeechRecognition not supported");
+      speak("आपका ब्राउज़र माइक्रोफोन सपोर्ट नहीं करता।");
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = "hi-IN";
+
+// there are built-in function like onstart,onresult,onerror,onend
+    recognition.onstart = () => console.log("🎧 Listening...");
+    recognition.onresult = (e) => {
+        console.log(e)
+      let transcript = e.results[0][0].transcript;
+      console.log("🎙 You said:", transcript);
+      speak("आपने कहा: ",transcript);
+    };
+
+    recognition.onerror = (e) => console.error("❌ Error:", e.error);
+    recognition.onend = () => console.log("🛑 Recognition stopped");
+    recognition.start();
+  }***  
+
+
+
+
+  ////////////////////

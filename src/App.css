@@ -1,0 +1,168 @@
+ /* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 92vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+img {
+  height: 500px;
+  max-width: 100%;
+
+}
+
+.span {
+  font-size: 2vmax;
+  font-weight: 600;
+  background: linear-gradient(90deg, rgb(10, 185, 234), rgb(201, 10, 172));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 1.3rem;
+  color: white;
+  max-width: 600px;
+}
+button {
+  width: 180px;
+  height: 45px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, rgb(10, 185, 234), rgb(201, 10, 172));
+  box-shadow: 0 0 25px rgba(10, 185, 234, 0.7);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(201, 10, 172, 0.9);
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.loadingImg {
+  width: 350px;
+  height: 200px;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* Use min-height to ensure content can push the page down */
+  min-height: 100vh; 
+  /* Removed height: 92vh and overflow: hidden to allow scrolling on small screens */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px; /* Added padding for space around content on all sides */
+}
+
+/* MAIN CONTAINER */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Increased gap slightly for better mobile separation */
+  text-align: center;
+  /* Ensure main container takes up most of the screen width */
+  width: 100%; 
+  max-width: 800px; /* Keep it constrained on very large screens */
+}
+
+/* IMAGE */
+img {
+  /* Key change: Use max-width to ensure it never overflows the screen */
+  max-width: 100%; 
+  /* Set a fluid height to prevent it from dominating the screen */
+  height: auto; 
+  /* Removed fixed height: 500px; */
+}
+
+/* TITLE TEXT */
+.span {
+  /* Use clamp for responsive sizing: small on mobile, medium on desktop */
+  font-size: clamp(1.5rem, 5vw, 2.5rem); 
+  font-weight: 600;
+  background: linear-gradient(90deg, rgb(10, 185, 234), rgb(201, 10, 172));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* PARAGRAPH */
+p {
+  /* Adjusted font size for better readability on small screens */
+  font-size: clamp(1rem, 3vw, 1.3rem); 
+  color: white;
+  max-width: 600px;
+  padding: 0 10px; /* Added horizontal padding for text on very small screens */
+}
+
+/* BUTTON */
+button {
+  width: 180px;
+  height: 45px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, rgb(10, 185, 234), rgb(201, 10, 172));
+  box-shadow: 0 0 25px rgba(10, 185, 234, 0.7);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(201, 10, 172, 0.9);
+}
+
+/* LOADING IMG + TEXT */
+.answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* LOADING IMAGE */
+.loadingImg {
+  /* Use max-width and auto height */
+  max-width: 80%; 
+  height: auto;
+  /* Removed fixed height: 200px; */
+}
