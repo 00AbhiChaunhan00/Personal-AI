@@ -1,16 +1,67 @@
-# React + Vite
+<div align="center">
+  
+# 🤖 PERSONAL AI – JACKSON  
+Your Own Voice-Activated Virtual Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="https://raw.githubusercontent.com/00AbhiChaunhan00/Personal-AI/main/src/assets/responseGif2.gif" width="600"/>
 
-Currently, two official plugins are available:
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📍 Overview  
+Personal AI – JACKSON is a smart virtual assistant built using modern web technologies.  
+It understands your voice commands, responds with accurate answers, and can perform real-time tasks like opening apps/websites, telling date & time, and much more — all with a clean and futuristic UI.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Speak. Command. Control.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- 🎤 Voice recognition using Web Speech API  
+- 🎧 AI responses powered by Gemini API  
+- 🌐 Opens websites like:
+  - YouTube
+  - Google
+  - Amazon
+  - LinkedIn
+  - GitHub
+- ⏱ Provides **current date & time**
+- 🗂 Smart suggestions for task execution  
+- ⚡ Fast & responsive UI  
+- 🖥 Built with modern React structure (Context + Routing)  
+
+---
+
+## 🧰 Tech Stack
+
+| Category | Technology |
+|---------|------------|
+| Frontend | React, Vite, Context API |
+| Styling | CSS3 |
+| AI Model | Gemini API |
+| Voice | Web Speech API |
+| Deployment | Vercel |
+| API Client | Axios |
+
+---
+
+## 🧠 Topics Used in React
+
+- 📌 **Axios** for API calls  
+- 🔄 **Context API** for global state management  
+- 🎬 Async operations with Promises  
+- 🎛 Modular reusable components  
+
+---
+
+## 🔗 Live Demo  
+👉 Visit Here: **(https://personal-ai-00.vercel.app/)**
+---
+
+
+npm install
+
+# Run the project
+npm run dev
