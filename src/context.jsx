@@ -40,11 +40,10 @@ function Usedcontext({ children }) {
       question = String(question);
     }
 
-    let answer =
-      question.split("**") &&
-      question.replace("*", " ") &&
-      question.replace("google", "Abhishek") &&
-      question.replace("Google", "Abhishek");
+      let answer = question
+    .replace(/\*\*/g, "")         
+    .replace(/\*/g, " ")           
+    .replace(/google/gi, "Abhishek"); 
 
     speak(answer);
     setprompt(answer); // here it shows what api gives
