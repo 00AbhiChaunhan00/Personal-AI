@@ -11,7 +11,9 @@ Your Own Voice-Activated Virtual Assistant
 
 ## 📍 Overview  
 Personal AI – JACKSON is a smart virtual assistant built using modern web technologies.  
-It understands your voice commands, responds with accurate answers, and can perform real-time tasks like opening apps/websites, telling date & time, and much more — all with a clean and futuristic UI.  
+It understands your voice commands, responds with accurate answers, and can perform real-time tasks like opening apps/websites, telling date & time, and much more — all with a clean and futuristic UI.
+
+[Live Demo](https://personal-ai-00.vercel.app/)
 
 > Speak. Command. Control.
 
@@ -54,10 +56,6 @@ It understands your voice commands, responds with accurate answers, and can perf
 - 🎬 Async operations with Promises  
 - 🎛 Modular reusable components  
 
----
-
-## 🔗 Live Demo  
-👉 Visit Here: **(https://personal-ai-00.vercel.app/)**
 ---
 
 
