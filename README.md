@@ -3,8 +3,6 @@
 # 🤖 PERSONAL AI – JACKSON  
 Your Own Voice-Activated Virtual Assistant
 
-<img src="https://raw.githubusercontent.com/00AbhiChaunhan00/Personal-AI/main/src/assets/responseGif2.gif" width="600"/>
-
 </div>
 
 ---
